@@ -1,0 +1,11 @@
+Do prawidłowego działania skryptu wymagane jest odblokowanie komputera na przychodzące komendy.
+Żeby to zrobić to na komputerze, na którym ma być widoczny obrazek należy wpisać:
+$ xhost +
+
+On Unix-like operating systems, the xhost command is a server access control program for X. It adds and deletes hostnames or user names to the list allowed to make connections to the X server.
+
+Program uruchamia się za pomocą:
+$ ./a.out [ip]:0
+
+Kompiluje się:
+$ gcc prog.c -lpthread

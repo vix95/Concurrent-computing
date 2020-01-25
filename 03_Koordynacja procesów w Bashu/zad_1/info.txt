@@ -1,0 +1,2 @@
+Use bash (not sh) to run:
+$ bash ojciec

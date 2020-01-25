@@ -1,0 +1,42 @@
+Proste mechanizmy koordynacji procesów w bash'u
+
+Zadanie 1. Wypróbować działanie pary przykładowych skryptów załączonych do Wykładu 6:
+
+        ojciec:
+
+    declare -i x y
+    echo -n "Podaj liczbe calkowita: "
+    read x
+    syn $x &
+    y=x*x
+    wait $!
+    y=y+$?
+    echo "Wynik: $y"
+    exit 0
+
+       syn:
+
+    declare -i p
+    p=$1
+    p=p*p*p
+    exit $p
+(powyższa para skryptów realizuje obliczenie wartości wielomianu x*x + x*x*x przy warunku, że nie zostanie przekroczony zakres obliczeniowy dla liczb naturalnych jednobajtowych, czyli 0, ..., 255).
+Zadanie 2. Wczytać liczby naturalne n, k (0<=k<=n<=5) i obliczyć wartość dwumianu Newtona dla danych (n, k) metodą współbieżnego obliczenia trzech silni:
+
+					     
+    ...
+    silnia n &
+    ...
+    silnia k &
+    ...
+    silnia $((n-k)) &
+    ...             # zapamiętać PID-y uruchomionych trzech procesów
+    wait ...
+    ...
+    wait ...
+    ...
+    wait ...
+    ...
+Zadanie 3. (PODLEGA ODBIOROWI - CZAS 2 ZAJĘCIA) Utworzyć skrypt o dwóch argumentach: szukaj plik katalog , który (podobnie, jak polecenie find) znajduje wszystkie wystąpienia pliku o podanej nazwie w poddrzewie katalogów o podanej nazwie ścieżkowej korzenia. Skrypt powinien działać na zasadzie współbieżnych, rekurencyjnych wywołań dla wszystkich podkatalogów danego katalogu i powinien wykorzystywać wyżej omówiony mechanizm exit - wait do przekazywania informacji od procesów potomnych do rodzicielskich.
+
+Uwaga: w przypadku, gdy skrypt nie znajdzie ani jednego wystpienia danego pliku, powinien wyświetlić komunikat "Nie znaleziono", ale TYLKO RAZ.

@@ -1,0 +1,7 @@
+Command to run with positive result of search
+$ bash /home/vix/programowanie_wspolbiezne/Lab_03/zad_3/szukaj.sh plain_text_file.txt /home/vix/catalog_structure/
+$ bash /home/vix/programowanie_wspolbiezne/Lab_03/zad_3/szukaj.sh plain_text_file.txt /home/vix/catalog_structure/
+
+Command to run with negative result of search
+$ bash /home/vix/programowanie_wspolbiezne/Lab_03/zad_3/szukaj.sh file.txt /home/vix/catalog_structure/
+$ bash /home/vix/programowanie_wspolbiezne/Lab_03/zad_3/szukaj.sh file.txt /home/vix/catalog_structure/

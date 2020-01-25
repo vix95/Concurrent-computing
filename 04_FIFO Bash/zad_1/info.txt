@@ -1,0 +1,17 @@
+Najpierw nalezy utworzyc pliki fifo poprzez:
+$ mkfifo fifo1
+$ mkfifo fifo2
+
+Nalezy wlaczyc dwa terminale i uruchomic:
+
+Terminal 1:
+$ bash zad1_1.sh
+
+Terminal 2:
+$ bash zad1_2.sh
+
+W efekcie widac, ze pliki sa ze soba powiazane i jesli
+wpisuje sie tekst w jednym pliku to pojawia sie od razu
+w drugim.
+
+Zeby wylaczyc strumieniowanie nalezy wcisnac CTRL + D.

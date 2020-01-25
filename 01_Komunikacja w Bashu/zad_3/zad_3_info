@@ -1,0 +1,13 @@
+$ cd Nextcloud/UG/Semestr\ 5/Programowanie\ współbieżne/Laboratoria/Lab_01/zad_3/
+
+odpalam z komendy
+$ sh zad_3.sh
+
+komenda do sprawdzenia procesow
+$ ps S
+
+komenda do zobaczenia procesow
+$ ps aux
+
+procesy tylko dla zadania
+$ ps -aux | grep 'sh zad_3.sh'

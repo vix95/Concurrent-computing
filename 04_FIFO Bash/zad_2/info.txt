@@ -1,0 +1,12 @@
+Serwer dziala w nieskonczonej petli, zeby uruchomic nalezy podac
+sciezke do skryptu:
+$ bash /home/vix/programowanie_wspolbiezne/Lab_04/zad_2/serwer.sh
+
+Uruchomic klienta:
+$ bash klient.sh 1
+
+Zamkniecie serwera sygnalem:
+$ kill -s USR1 [PID]
+
+Podglad procesow:
+$ ps -aux

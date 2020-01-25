@@ -1,0 +1,1 @@
+$ sh zad_2.sh /home/vix/

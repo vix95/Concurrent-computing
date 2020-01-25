@@ -1,0 +1,4 @@
+Use bash (not sh) to run:
+$ bash zad2.sh
+
+n musi byc wieksze lub rowne od k!

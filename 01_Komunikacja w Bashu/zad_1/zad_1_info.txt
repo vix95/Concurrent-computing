@@ -1,0 +1,13 @@
+Uruchomić skrytpy
+$ sh zad_1_1.sh & sh zad_1_2.sh & sh zad_1_3.sh
+
+Killnięcie skryptów z innego terminala
+$ pkill -f zad_1_1.sh
+$ pkill -f zad_1_2.sh
+$ pkill -f zad_1_3.sh
+
+$ pkill -f zad_1_1.sh & pkill -f zad_1_2.sh & pkill -f zad_1_3.sh
+
+Killnięcie skryptów z tego samego terminala
+$ CTRL + C
+$ pkill -f zad_1_1.sh & pkill -f zad_1_2.sh & pkill -f zad_1_3.sh
